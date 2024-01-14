@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>RequirementsSage-Chatbot</title>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="https://arcane.com/static/arcane-logo-r-c5c6e8cc377f92f125e50baf52988a87.png">
+  
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+  <!-- Bootstrap JavaScript and Popper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"></script>
+    <style>
+      .card {
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        background-color: #000;
+        color: #fff;
+      }
+  
+      .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+  
+      .input-group-append button {
+        margin-right: 10px;
+      }
+    </style>
+</head>
+
+<nav class="navbar navbar-expand-lg" style="background-color: #24798C;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="{% url 'xhat' %}" style="text-align: center;">RequirementsSage Chatbot</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="text-align: center;">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" style="text-align: center;">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="text-align: center;">
+              More Options
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#" style="text-align: center;">My Account</a></li>
+              <li><a class="dropdown-item" href="#" style="text-align: center;">My Documents</a></li>
+              <li><a class="dropdown-item" href="{% url 'xhatapp:aboutx' %}" style="text-align: center;">About Us</a></li>
+              <li><a class="dropdown-item" href="{% url 'logggout' %}" style="text-align: center;">Logout</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>  
+<body class="text-bg-secondary">
+  <header>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasLeft" aria-labelledby="offcanvasLeftLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasLeftLabel">Old Chats</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <!-- Old Chats Content -->
+          <!-- ... -->
+          <p>Old chat 1</p>
+          <p>Old chat 2</p>
+          <!-- ... -->
+        </div>
+      </div>
+  
+  </header>
+
+
+
+</body>
+
+</html>
